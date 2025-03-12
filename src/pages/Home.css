@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.teste {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.abesha {
+  padding: 10vh 0 5vh 0;
+  margin: 0;
+}
+
+.abesha2 {
+  padding: 2vh 0 5vh 0;
+  margin: 0;
+}
+
+
+.team-home {
+  text-align: center;
+  color: rgb(134, 7, 7);
+  margin-top: 0;
+  padding: 0;
+}
+
+
+.images-home {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}

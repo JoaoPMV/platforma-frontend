@@ -1,0 +1,228 @@
+.container-platform {
+  background-color: rgb(233, 233, 236);
+
+}
+
+.title-video {
+  color: rgb(57, 56, 56);
+  font-size: 18px;
+  padding-top: 3vh;
+  text-align: center;
+}
+
+.video-container {
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.line-video {
+  margin: 0;
+}
+
+.container-main {
+  background-color: rgb(233, 233, 236);
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.button-video {
+  align-items: center;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  margin-bottom: 5vw;
+
+}
+
+.video-description {
+  line-height: 200%;
+  background-color: rgb(252, 251, 251);
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: rgb(35, 35, 35);
+  font-size: 15px;
+  line-height: 220%;
+}
+
+.video-icon {
+  font-size: 30px;
+  color: blue;
+}
+
+.icons {
+  color: rgb(179, 25, 66);
+  font-size: 50px;
+}
+
+.iconWords {
+  color: rgb(179, 25, 66);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.button-music {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.p-button-music {
+  color: blue;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.lyricsFields {
+  list-style: none;
+  text-align: start;
+  padding: 0 2vw 0 3vw;
+  margin: 0 4vw;
+  border: 1px solid rgb(234, 231, 231);
+  border-radius: 5px;
+  background-color: rgb(234, 231, 231);
+
+}
+
+
+.vocabularyFields {
+  list-style: none;
+  text-align: start;
+  padding: 0 2vw 0 3vw;
+  margin: 0 4vw;
+  border: 1px solid rgb(234, 231, 231);
+  border-radius: 5px;
+  background-color: rgb(234, 231, 231);
+  color: rgb(57, 57, 57)
+}
+
+.lyricsFields p {
+  margin: 2vh 0 2vh 0;
+  padding-top: 2vh;
+  font-size: 14px;
+}
+
+.lyricsFields p input {
+
+  font-size: 5px;
+}
+
+.lyricsFields li {
+  padding: 2vh 0 1vh 0;
+  font-size: 14px;
+}
+
+.lyricsFields input {
+  border-radius: 5px;
+
+}
+
+#lyricsFields {
+  display: none;
+}
+
+.vocabularyFields li {
+  text-align: center;
+}
+
+.images {
+  width: 100%;
+  /* Faz a imagem ocupar toda a largura da div */
+  height: 100%;
+  /* Faz a imagem ocupar toda a altura da div */
+  object-fit: cover;
+
+}
+
+.singer {
+  text-align: center;
+  margin: 4vh 0 0 0;
+  font-size: 20px;
+}
+
+.song {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+input {
+  width: 25vw;
+  height: 23px;
+}
+
+input.valid {
+  border-color: rgb(56, 212, 56);
+  background-color: rgb(56, 212, 56);
+  color: white;
+  border-radius: 5px;
+
+  /* Cor de fundo verde claro */
+}
+
+.aloka {
+  color: green;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.platform {
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 22px;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.platform-description {
+
+  font-size: 15px;
+  margin: 0;
+  padding: 3vh 5vw;
+  line-height: 200%;
+  text-align: justify;
+
+}
+
+.icons-platform {
+  color: rgb(179, 25, 66);
+  font-size: 1.5rem;
+
+}
+
+.col-platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+  padding: 6.5vh 7vw;
+}
+
+.row-platform {
+  padding: 0 12vw;
+  display: flex;
+  justify-content: center;
+}
