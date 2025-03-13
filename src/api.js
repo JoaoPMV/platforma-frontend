@@ -1,5 +1,7 @@
 const API_URL = import.meta.env.VITE_APP_URL; // Corrigido para usar o import.meta.env no Vite
 
+console.log(API_URL); // Verifique se a URL está correta
+
 // Função para login do usuário
 export async function loginUser(userData) {
   try {
