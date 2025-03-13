@@ -1,9 +1,9 @@
-const APP_URL = import.meta.env.VITE_APP_URL; // Corrigido para usar o import.meta.env no Vite
+const API_URL = import.meta.env.VITE_APP_URL; // Corrigido para usar o import.meta.env no Vite
 
 // Função para login do usuário
 export async function loginUser(userData) {
   try {
-    const response = await fetch(`${APP_URL}/api/students/login`, {
+    const response = await fetch(`${API_URL}/api/students/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),
@@ -29,7 +29,7 @@ export async function loginUser(userData) {
 // Função de registro de usuário
 export async function registerUser(userData) {
   try {
-    const response = await fetch(`${APP_URL}/api/students/register`, {
+    const response = await fetch(`${API_URL}/api/students/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ export async function fetchPlatformData() {
       return null; // Retorna null se não encontrar o token
     }
 
-    const response = await fetch(`${APP_URL}/api/students/platform`, {
+    const response = await fetch(`${API_URL}/api/students/platform`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
