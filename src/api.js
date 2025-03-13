@@ -7,6 +7,7 @@ export async function loginUser(userData) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),
+      credentials: "include", // Inclui cookies (ou credenciais) na requisição
     });
 
     const data = await response.json();
@@ -34,6 +35,7 @@ export async function registerUser(userData) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(userData),
+      credentials: "include", // Inclui cookies ou credenciais na requisição
     });
     return await response.json(); // Retorna a resposta do servidor
   } catch (error) {
@@ -58,6 +60,7 @@ export async function fetchPlatformData() {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`, // Envia o token no cabeçalho
       },
+      credentials: "include", // Inclui credenciais (cookies ou headers de autorização) na requisição
     });
 
     if (!response.ok) {
