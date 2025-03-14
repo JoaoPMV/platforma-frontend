@@ -1,6 +1,4 @@
-const API_URL = import.meta.env.VITE_APP_URL; // Corrigido para usar o import.meta.env no Vite
-
-console.log(API_URL); // Verifique se a URL está correta
+const API_URL = import.meta.env.VITE_APP_URL;
 
 // Função para login do usuário
 export async function loginUser(userData) {
@@ -9,13 +7,13 @@ export async function loginUser(userData) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),
-      credentials: "include", // Inclui cookies (ou credenciais) na requisição
+      credentials: "include",
     });
 
     const data = await response.json();
 
     if (data.token) {
-      localStorage.setItem("token", data.token); // Salva o token no localStorage
+      localStorage.setItem("token", data.token);
     } else {
       console.error("Erro: Token não recebido no login.");
       return null;
@@ -37,12 +35,12 @@ export async function registerUser(userData) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(userData),
-      credentials: "include", // Inclui cookies ou credenciais na requisição
+      credentials: "include",
     });
-    return await response.json(); // Retorna a resposta do servidor
+    return await response.json();
   } catch (error) {
     console.error("Erro ao registrar usuário:", error);
-    return null; // Retorna null em caso de erro
+    return null;
   }
 }
 
@@ -53,28 +51,27 @@ export async function fetchPlatformData() {
 
     if (!token) {
       console.error("Token não encontrado. Usuário não autenticado.");
-      return null; // Retorna null se não encontrar o token
+      return null;
     }
 
     const response = await fetch(`${API_URL}/api/students/platform`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`, // Envia o token no cabeçalho
+        Authorization: `Bearer ${token}`,
       },
-      credentials: "include", // Inclui credenciais (cookies ou headers de autorização) na requisição
+      credentials: "include",
     });
 
     if (!response.ok) {
-      const errorMessage = await response.text(); // Captura a mensagem de erro detalhada
-      console.error("Erro ao acessar a plataforma:", errorMessage); // Mostra o erro detalhado no console
-      throw new Error(`Erro ao acessar a plataforma: ${errorMessage}`); // Lança o erro
+      const errorMessage = await response.text();
+      console.error("Erro ao acessar a plataforma:", errorMessage);
+      throw new Error(`Erro ao acessar a plataforma: ${errorMessage}`);
     }
 
-    const data = await response.json(); // Retorna os dados da resposta
-    return data;
+    return await response.json();
   } catch (error) {
     console.error("Erro ao acessar a plataforma:", error.message);
-    return null; // Retorna null em caso de erro
+    return null;
   }
 }
