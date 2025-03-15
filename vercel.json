@@ -1,9 +1,12 @@
 {
   "version": 2,
-
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "^/frontend/(.*)$",
+      "dest": "/frontend/index.html"
+    },
+    {
+      "src": "^(.*)$",
       "dest": "/frontend/index.html"
     }
   ]
