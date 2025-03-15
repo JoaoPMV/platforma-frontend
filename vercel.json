@@ -1,12 +1,8 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/platform",
-      "destination": "/frontend"
-    },
-    {
-      "source": "/platform/*",
-      "destination": "/frontend"
+      "source": "/frontend",
+      "destination": "/index.html"
     }
   ]
 }
