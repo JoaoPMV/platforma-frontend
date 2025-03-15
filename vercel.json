@@ -1,13 +1,15 @@
 {
-  "trailingSlash": true,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/frontend/(.*)",
-      "destination": "/frontend/index.html"
-    },
+      "src": "frontend/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/frontend/index.html"
+      "src": "/(.*)",
+      "dest": "/frontend/index.html"
     }
   ]
 }
