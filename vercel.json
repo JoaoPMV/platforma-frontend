@@ -1,6 +1,10 @@
 {
-  "cleanUrls": true,
+  "trailingSlash": true,
   "rewrites": [
+    {
+      "source": "/frontend/(.*)",
+      "destination": "/frontend/index.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/frontend/index.html"
