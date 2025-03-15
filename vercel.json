@@ -1,13 +1,9 @@
 {
-  "version": 2,
-  "routes": [
+  "cleanUrls": true,
+  "rewrites": [
     {
-      "src": "^/frontend/(.*)$",
-      "dest": "/frontend/index.html"
-    },
-    {
-      "src": "^(.*)$",
-      "dest": "/frontend/index.html"
+      "source": "/(.*)",
+      "destination": "/frontend/index.html"
     }
   ]
 }
