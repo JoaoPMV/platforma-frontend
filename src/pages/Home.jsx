@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
-import { FaDove } from "react-icons/fa";
+import NavBar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div>
+      <NavBar></NavBar>
       <div className="container-fluid container-home">
         <div className="abesha">
           <p className="teste">Inglês com professores nativos</p>
@@ -29,6 +31,7 @@ const Home = () => {
           <p className="teste">Online platform full of extra materials</p>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 .container-platform {
   background-color: rgb(233, 233, 236);
+  min-height: 75vh;
 
 }
 

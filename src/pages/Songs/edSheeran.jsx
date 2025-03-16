@@ -76,7 +76,7 @@ export default function LyricsGame() {
       <p className="song">Perfect</p>
 
       <div className="row">
-        <div className="">
+        <div>
           <img
             src="/images/edSheeran.png"
             className="images rounded-5"

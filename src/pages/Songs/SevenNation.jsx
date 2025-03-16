@@ -58,7 +58,7 @@ export default function LyricsGame() {
       <p className="song">The White Stripes</p>
 
       <div className="row">
-        <div className="">
+        <div>
           <img
             src="/images/sevennation.jpg"
             className="images rounded-5"

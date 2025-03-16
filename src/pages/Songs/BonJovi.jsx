@@ -85,7 +85,7 @@ export default function LyricsGame() {
       <p className="song">Always</p>
 
       <div className="row">
-        <div className="">
+        <div>
           <img src="/images/bonJovi.png" className="images rounded-5" alt="" />
         </div>
       </div>

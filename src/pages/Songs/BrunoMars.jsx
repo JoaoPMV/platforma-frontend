@@ -86,9 +86,9 @@ export default function LyricsGame() {
       <p className="song">The Lazy Song</p>
 
       <div className="row">
-        <div className="">
+        <div>
           <img
-            src="/images/BrunoMars.jpg"
+            src="/images/brunoMars.jpg"
             className="images rounded-5"
             alt=""
           />
