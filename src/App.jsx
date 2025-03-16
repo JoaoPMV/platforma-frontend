@@ -11,8 +11,6 @@ import SevenNation from "./pages/Songs/SevenNation.jsx";
 import BrunoMars from "./pages/Songs/BrunoMars.jsx";
 import Video from "./pages/Videos/Pratical2.jsx";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import PrivateRoute from "./components/PrivateRoutes"; // Importe o PrivateRoute
 
 function App() {

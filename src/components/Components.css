@@ -96,3 +96,21 @@
   border-top-right-radius: 0rem;
 
 }
+
+/* FOOTER MUSIC */
+
+
+.footer-music {
+  background-color: rgb(187, 19, 62);
+  width: 50vw;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  text-align: center;
+  padding: 2vh;
+}
+
+.icons-FooterMusic {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}

@@ -5,6 +5,8 @@
 
 }
 
+
+
 .title-video {
   color: rgb(57, 56, 56);
   font-size: 18px;
@@ -74,6 +76,7 @@
   margin: 0;
   padding: 0;
   font-size: 14px;
+
 }
 
 .lyricsFields {
@@ -137,16 +140,33 @@
 
 }
 
+.container-singer {
+  min-height: 90.3vh;
+  padding-top: 35vh;
+
+}
+
+.informations-singer {
+  color: white;
+  border: 1px solid rgb(189, 188, 188);
+  background-color: rgb(31, 23, 138);
+  border-radius: 0.5rem;
+  position: fixed;
+  z-index: 1;
+  height: 38vh;
+
+}
+
 .singer {
   text-align: center;
-  margin: 4vh 0 0 0;
+  margin: 1vh 0 0 0;
   font-size: 20px;
+
 }
 
 .song {
   font-size: 16px;
   text-align: center;
-  margin-bottom: 2vh;
 }
 
 input {
@@ -233,6 +253,11 @@ input.valid {
 
 .row-platform {
   padding: 0 12vw;
+  display: flex;
+  justify-content: center;
+}
+
+.col-audio {
   display: flex;
   justify-content: center;
 }
