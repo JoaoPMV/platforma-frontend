@@ -12,7 +12,7 @@ export default function LyricsGame() {
 
   // prettier-ignore
   const lyrics = [
-    { textBefore: "I", missingWord: "found", textAfter: "a love for me" },
+    { textBefore: "I", missingWord: "found", textAfter: "a love for me"},
     { textBefore: "Darling, just dive right in and", missingWord: "follow", textAfter: "my lead",},
     { textBefore: "I", missingWord: "found", textAfter: "a girl, beautiful and sweet",},
     { textBefore: "I never knew you were the someone", missingWord: "waiting", textAfter: "for me",},
@@ -88,7 +88,7 @@ export default function LyricsGame() {
       <div class="row">
         <div class="col">
           <audio controls className="mt-3">
-            <source src="/musics/perfect.mp3" type="audio/mpeg" />
+            <source src="/Musics/perfect.mp3" type="audio/mpeg" />
             Seu navegador não suporta áudio HTML5.
           </audio>
         </div>

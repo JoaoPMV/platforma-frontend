@@ -90,10 +90,10 @@ export default function LyricsGame() {
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <audio controls className="mt-3">
-            <source src="/musics/always.mp3" type="audio/mpeg" />
+            <source src="/Musics/always.mp3" type="audio/mpeg" />
             Seu navegador não suporta áudio HTML5.
           </audio>
         </div>
