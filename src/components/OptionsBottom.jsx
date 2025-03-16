@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom"; // Use navigate para redirecionar
-import { MdMenuBook } from "react-icons/md";
 import { GrAssistListening } from "react-icons/gr";
 import { BiNews } from "react-icons/bi";
 import { FaHome } from "react-icons/fa";
+import { RiSpeakFill } from "react-icons/ri";
 import "./Components.css";
 
 const Options = () => {
@@ -12,9 +12,9 @@ const Options = () => {
       <div className="row row-options-bottom">
         <div className="col col-music-bottom">
           <NavLink to="">
-            <MdMenuBook className="icons-options" />
+            <RiSpeakFill className="icons-options" />
           </NavLink>
-          <p className="options-word">reading</p>
+          <p className="options-word">speaking</p>
         </div>
         <div className="col col-music-bottom">
           <NavLink to="">

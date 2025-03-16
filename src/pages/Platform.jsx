@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { SiApplemusic } from "react-icons/si";
-import { SiGrammarly } from "react-icons/si";
-import { MdMenuBook } from "react-icons/md";
-import { GrAssistListening } from "react-icons/gr";
-import { FaVideoSlash } from "react-icons/fa6";
-import { BiNews } from "react-icons/bi";
+
 import { fetchPlatformData } from "../api";
 import OptionsTop from "../components/OptionsTop";
 import OptionsBottom from "../components/OptionsBottom";
@@ -34,7 +29,7 @@ const Platform = () => {
   return (
     <div>
       <OptionsTop></OptionsTop>
-      <div className="container-fluid container-platform border border-dark">
+      <div className="container-fluid container-platform">
         <p className="platform">Plataforma</p>
         <p className="platform-description">
           Olá, <span className="userName">{userName || "Usuário"}</span>. Seja
