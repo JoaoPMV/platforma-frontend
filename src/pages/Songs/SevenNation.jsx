@@ -28,7 +28,7 @@ export default function LyricsGame() {
     { textBefore: "From the Queen of", missingWord: "England", textAfter: "to the hounds of hell",},
     { textBefore: "And if I catch it coming", missingWord: "back", textAfter: "my way",},
     { textBefore: "I'm gonna", missingWord: "serve", textAfter: "it to you",},
-    { textBefore: "And that ain't what you", missingWord: "want", textAfter: "hear",},
+    { textBefore: "And that ain't what you", missingWord: "want", textAfter: "to hear",},
     { textBefore: "But that's", missingWord: "what", textAfter: "I'll do",},
     { textBefore: "And the feeling coming", missingWord: "from", textAfter: "my bones",},
     { textBefore: "Says: Find a", missingWord: "home", textAfter: "",},

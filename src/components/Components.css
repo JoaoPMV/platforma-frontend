@@ -48,13 +48,11 @@
 }
 
 .row-options-top {
-  background: rgb(0, 38, 100);
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  background-image: linear-gradient(to right, rgb(31, 23, 138) 49%, rgb(0, 38, 100) 90%);
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 3rem;
 
 }
-
-
 
 .col-music-top {
   display: flex;
@@ -93,8 +91,8 @@
 }
 
 .row-options-bottom {
-  background: rgb(0, 38, 100);
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  background-image: linear-gradient(to right, rgb(0, 38, 100) 49%, rgb(31, 23, 138) 90%);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 0rem;
 
 }

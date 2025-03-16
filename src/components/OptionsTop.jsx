@@ -18,9 +18,9 @@ const Options = () => {
         </div>
         <div className="col col-music-top">
           <NavLink to="">
-            <FaVideoSlash className="icons-options" />
+            <SiGrammarly className="icons-options" />
           </NavLink>
-          <p className="options-word">video</p>
+          <p className="options-word">grammar</p>
         </div>
 
         <div className="col col-music-top">
@@ -31,9 +31,9 @@ const Options = () => {
         </div>
         <div className="col col-music-top">
           <NavLink to="">
-            <SiGrammarly className="icons-options" />
+            <FaVideoSlash className="icons-options" />
           </NavLink>
-          <p className="options-word">grammar</p>
+          <p className="options-word">video</p>
         </div>
       </div>
     </div>

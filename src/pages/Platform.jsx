@@ -31,10 +31,12 @@ const Platform = () => {
       <OptionsTop></OptionsTop>
       <div className="container-fluid container-platform">
         <p className="platform">Plataforma</p>
+        <p className="userName-description">
+          Olá, <span className="userName">{userName || "Usuário"}</span>.
+        </p>
         <p className="platform-description">
-          Olá, <span className="userName">{userName || "Usuário"}</span>. Seja
-          bem-vindo(a). Aqui você tem acesso exclusivo a conteúdos para
-          aprimorar o inglês. <span className="userName">Bons estudos.</span>
+          Seja bem-vindo(a) à plataforma de inglês, com acesso a conteúdos
+          exclusivos. <span className="userName">Bons estudos.</span>
         </p>
       </div>
       <OptionsBottom></OptionsBottom>

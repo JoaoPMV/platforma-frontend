@@ -1,5 +1,6 @@
 .container-platform {
-  background-color: rgb(233, 233, 236);
+  background-image: linear-gradient(to right, rgb(243, 240, 240), rgb(233, 233, 236));
+
   min-height: 74vh;
 
 }
@@ -194,16 +195,24 @@ input.valid {
 
 .userName {
   font-weight: bold;
+  color: rgb(31, 23, 138);
+  font-size: 17px;
+}
+
+.userName-description {
+  font-size: 15px;
+  margin: 0;
+  padding: 3vh 7vw;
+  line-height: 200%;
+  text-align: justify;
 }
 
 .platform-description {
-
   font-size: 15px;
   margin: 0;
-  padding: 3vh 5vw;
+  padding: 0 7vw;
   line-height: 200%;
   text-align: justify;
-
 }
 
 .icons-platform {
