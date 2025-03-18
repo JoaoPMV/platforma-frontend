@@ -1,19 +1,16 @@
+import React from "react";
 import { useState } from "react";
-import { FaArrowAltCircleDown } from "react-icons/fa";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { FaCaretSquareLeft } from "react-icons/fa";
 import { FaCaretSquareRight } from "react-icons/fa";
+
 import FooterMusic from "../../components/FooterMusic";
 
-import "../Platform.css";
+import "./Model.css";
 
-export default function LyricsGame() {
-  const [activeSection, setActiveSection] = useState(null);
+const BrunoMars = () => {
   const audioRef = useRef(null);
-
-  const toggleSection = (section) => {
-    setActiveSection(activeSection === section ? null : section);
-  };
+  const [activeSection, setActiveSection] = useState(null);
 
   const handleBackTenSeconds = () => {
     if (audioRef.current) {
@@ -25,6 +22,10 @@ export default function LyricsGame() {
     if (audioRef.current) {
       audioRef.current.currentTime += 10;
     }
+  };
+
+  const toggleSection = (section) => {
+    setActiveSection(activeSection === section ? null : section);
   };
 
   // prettier-ignore
@@ -84,7 +85,7 @@ export default function LyricsGame() {
     { textBefore: "Nothing at all", missingWord: "", textAfter: ""},
     { textBefore: "Nothing at all", missingWord: "", textAfter: ""},
     { textBefore: "Nothing at all", missingWord: "", textAfter: ""},
-  ];
+    ];
 
   const [answers, setAnswers] = useState(Array(lyrics.length).fill(""));
 
@@ -96,52 +97,43 @@ export default function LyricsGame() {
 
   return (
     <div>
-      <div className="container-fluid informations-singer">
-        <p className="singer"> Bruno Mars</p>
-        <p className="song">The Lazy Song</p>
+      <div class="container-fluid container-band">
+        <p className="band pt-2">Bruno Mars - The Lazy Song</p>
 
-        <div className="row d-flex flex-column">
-          <div className="col col-lg-12 d-flex justify-content-center">
-            <audio ref={audioRef} controls className="">
-              <source src="/Musics/theLazySong.mp3" type="audio/mpeg" />
-              Seu navegador não suporta áudio HTML5.
-            </audio>
-          </div>
-          <div class="col d-flex justify-content-center py-2">
-            <FaCaretSquareLeft
-              onClick={() => handleBackTenSeconds()}
-              style={{ cursor: "pointer", fontSize: "24px" }}
-            />
+        <audio ref={audioRef} controls className="mt-2 audio-player">
+          <source src="/Musics/theLazySong.mp3" type="audio/mpeg" />
+          Seu navegador não suporta áudio HTML5.
+        </audio>
 
-            <p className="px-1 m-0">10 Seconds</p>
-            <FaCaretSquareRight
-              onClick={() => handleForwardTenSeconds()}
-              style={{ cursor: "pointer", fontSize: "24px" }}
-            />
-          </div>
+        <div class="col d-flex justify-content-center whiteBack pt-3">
+          <FaCaretSquareLeft
+            onClick={() => handleBackTenSeconds()}
+            style={{ cursor: "pointer", fontSize: "24px" }}
+          />
+
+          <p className="px-1 m-0">10 Seconds</p>
+          <FaCaretSquareRight
+            onClick={() => handleForwardTenSeconds()}
+            style={{ cursor: "pointer", fontSize: "24px" }}
+          />
+        </div>
+        <div className="col buttons-music">
+          <button
+            className="button-lyrics"
+            onClick={() => toggleSection("lyrics")}
+          >
+            Lyrics
+          </button>
+
+          <button
+            className="button-vocabulary"
+            onClick={() => toggleSection("vocabulary")}
+          >
+            Vocabulary
+          </button>
         </div>
       </div>
-      <div className="container container-singer">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-6 text-center"
-              onClick={() => toggleSection("lyrics")}
-            >
-              <p className="p-button-music">Lyrics</p>
-              <FaArrowAltCircleDown className="button-music" />
-            </div>
-
-            <div
-              className="col-6 text-center"
-              onClick={() => toggleSection("vocabulary")}
-            >
-              <p className="p-button-music">Vocabulary</p>
-              <FaArrowAltCircleDown className="button-music" />
-            </div>
-          </div>
-        </div>
-
+      <div className="som">
         <div
           className="lyricsFields"
           style={{ display: activeSection === "lyrics" ? "block" : "none" }}
@@ -159,17 +151,13 @@ export default function LyricsGame() {
                       margin: "0 5px",
                       textAlign: "center",
                       fontSize: "14px",
-                      border: "1px solid gray",
-                      borderColor:
-                        answers[index].toLowerCase() ===
-                        line.missingWord.toLowerCase()
-                          ? "green"
-                          : "rgb(196, 27, 27)",
+                      border: "none",
+
                       backgroundColor:
                         answers[index].toLowerCase() ===
                         line.missingWord.toLowerCase()
                           ? "green"
-                          : "rgb(196, 27, 27)",
+                          : "rgb(241, 70, 70)",
                       color:
                         answers[index].toLowerCase() ===
                         line.missingWord.toLowerCase()
@@ -185,7 +173,6 @@ export default function LyricsGame() {
             ))}
           </div>
         </div>
-
         <div
           className="vocabularyFields"
           style={{ display: activeSection === "vocabulary" ? "block" : "none" }}
@@ -221,4 +208,6 @@ export default function LyricsGame() {
       <FooterMusic></FooterMusic>
     </div>
   );
-}
+};
+
+export default BrunoMars;

@@ -10,6 +10,7 @@ import EdSheeran from "./pages/Songs/edSheeran.jsx";
 import SevenNation from "./pages/Songs/SevenNation.jsx";
 import BrunoMars from "./pages/Songs/BrunoMars.jsx";
 import Video from "./pages/Videos/Pratical2.jsx";
+import Model from "./pages/Songs/Model.jsx";
 
 import PrivateRoute from "./components/PrivateRoutes"; // Importe o PrivateRoute
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/platform" element={<Platform />} />
           <Route path="/platform/music" element={<Music />} />
           <Route path="/platform/music/bonjovi" element={<BonJovi />} />
+          <Route path="/platform/music/model" element={<Model />} />
           <Route path="/platform/music/edsheeran" element={<EdSheeran />} />
           <Route path="/platform/music/sevennation" element={<SevenNation />} />
           <Route path="/platform/music/brunomars" element={<BrunoMars />} />

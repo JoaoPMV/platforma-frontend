@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const FooterMusic = () => {
   return (
-    <footer className="d-flex justify-content-center">
+    <footer className="d-flex justify-content-center container-footerMusic">
       <div className="footer-music">
         <NavLink to="/platform/music">
           <RiArrowGoBackFill className="icons-FooterMusic" />

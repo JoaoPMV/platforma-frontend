@@ -8,7 +8,7 @@ import FooterMusic from "../../components/FooterMusic";
 
 import "./Model.css";
 
-const BonJovi = () => {
+const Model = () => {
   const audioRef = useRef(null);
   const [activeSection, setActiveSection] = useState(null);
 
@@ -159,7 +159,7 @@ const BonJovi = () => {
                         answers[index].toLowerCase() ===
                         line.missingWord.toLowerCase()
                           ? "green"
-                          : "rgb(241, 70, 70)",
+                          : "rgb(196, 27, 27)",
                       color:
                         answers[index].toLowerCase() ===
                         line.missingWord.toLowerCase()
@@ -218,4 +218,4 @@ const BonJovi = () => {
   );
 };
 
-export default BonJovi;
+export default Model;
