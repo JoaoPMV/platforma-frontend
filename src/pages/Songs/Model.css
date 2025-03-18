@@ -5,10 +5,11 @@
   align-items: center;
   position: fixed;
   border-bottom-right-radius: 5rem;
+
 }
 
 .som {
-  padding-top: 40dvh;
+  padding-top: 30dvh;
   padding-bottom: 10dvh;
   min-height: 90dvh;
 }

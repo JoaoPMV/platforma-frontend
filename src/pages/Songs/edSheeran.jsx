@@ -206,7 +206,6 @@ const EdSheeran = () => {
           </div>
         </div>
       </div>
-      <FooterMusic></FooterMusic>
     </div>
   );
 };

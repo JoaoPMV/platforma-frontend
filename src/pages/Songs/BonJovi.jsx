@@ -213,7 +213,6 @@ const BonJovi = () => {
           </div>
         </div>
       </div>
-      <FooterMusic></FooterMusic>
     </div>
   );
 };

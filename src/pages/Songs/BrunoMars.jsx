@@ -205,7 +205,6 @@ const BrunoMars = () => {
           </div>
         </div>
       </div>
-      <FooterMusic></FooterMusic>
     </div>
   );
 };
