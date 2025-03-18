@@ -4,14 +4,15 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  border-bottom-right-radius: 5rem;
+  border-bottom-right-radius: 7rem;
 
 }
 
 .som {
   padding-top: 30dvh;
   padding-bottom: 10dvh;
-  min-height: 90dvh;
+  min-height: 100dvh;
+
 }
 
 .band {
