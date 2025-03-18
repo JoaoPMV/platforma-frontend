@@ -4,9 +4,7 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  border-bottom-right-radius: 3rem;
-  border-bottom-left-radius: 3rem;
-
+  border-bottom-right-radius: 5rem;
 }
 
 .som {

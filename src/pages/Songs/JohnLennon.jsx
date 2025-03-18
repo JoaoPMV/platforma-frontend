@@ -179,7 +179,6 @@ const JohnLennon = () => {
           </div>
         </div>
       </div>
-      <FooterMusic></FooterMusic>
     </div>
   );
 };
