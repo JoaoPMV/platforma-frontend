@@ -9,8 +9,10 @@ const Home = () => {
       <NavBar></NavBar>
       <div className="container-fluid container-home">
         <div className="abesha">
-          <p className="teste">Inglês com professores nativos</p>
-          <p className="teste">Plataforma online repleta de materiais extras</p>
+          <p className="title-home">Inglês com professores nativos</p>
+          <p className="title-home">
+            Plataforma online repleta de materiais extras
+          </p>
         </div>
         <hr />
         <h4 className="team-home">Nossa Equipe</h4>
@@ -19,8 +21,8 @@ const Home = () => {
           <img src="./images/Joao.jpg" className="images-home" alt="" />
         </div>
         <div className="abesha2">
-          <p className="teste">English with native teachers</p>
-          <p className="teste">Online platform full of extra materials</p>
+          <p className="title-home">English with native teachers</p>
+          <p className="title-home">Online platform full of extra materials</p>
         </div>
       </div>
 

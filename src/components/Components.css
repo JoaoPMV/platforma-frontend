@@ -1,6 +1,8 @@
 /* NAVBAR */
 
-
+.navbar {
+  position: fixed;
+}
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -35,9 +37,10 @@
 
 /* FOOTER */
 
+
+
 .footer {
   background: rgb(0, 38, 100);
-
 }
 
 
