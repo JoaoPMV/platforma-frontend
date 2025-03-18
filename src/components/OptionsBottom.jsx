@@ -8,7 +8,7 @@ import "./Components.css";
 
 const Options = () => {
   return (
-    <div className="container-fluid container-options">
+    <div className="container-fluid container-options-bottom">
       <div className="row row-options-bottom">
         <div className="col col-music-bottom">
           <NavLink to="">
