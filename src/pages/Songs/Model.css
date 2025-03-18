@@ -9,10 +9,17 @@
 }
 
 .som {
-  padding-top: 30dvh;
+  padding-top: 45dvh;
   padding-bottom: 10dvh;
   min-height: 100dvh;
+  background-color: rgb(211, 211, 225);
 
+}
+
+.lyricsFields,
+.vocabularyFields {
+  background-color: rgb(211, 211, 225);
+  border: none;
 }
 
 .band {

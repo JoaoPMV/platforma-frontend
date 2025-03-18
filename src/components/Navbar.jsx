@@ -40,6 +40,9 @@ const Navbar = () => {
             <NavLink className="nav-link" to="/platform" onClick={closeMenu}>
               Plataforma
             </NavLink>
+            <NavLink className="nav-link" to="/sobre" onClick={closeMenu}>
+              Sobre
+            </NavLink>
           </div>
         </div>
       </div>

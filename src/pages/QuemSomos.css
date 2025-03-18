@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-quem-somos {
+  margin: 0;
+  padding: 1rem 0;
+  background-image: linear-gradient(to left, rgb(241, 222, 222), rgb(231, 231, 243));
+
+}
+
+.title {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 180%;
+  padding-top: 1rem;
+  color: rgb(72, 70, 70);
+
+}
+
+.sobre {
+  color: rgb(72, 70, 70);
+
+  line-height: 170%;
+}

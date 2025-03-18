@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import QuemSomos from "./pages/QuemSomos.jsx";
 import Platform from "./pages/Platform";
 import Music from "./pages/Songs/Music.jsx";
 import BonJovi from "./pages/Songs/BonJovi.jsx";
@@ -20,6 +21,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<QuemSomos />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
 
