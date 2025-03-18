@@ -186,7 +186,6 @@ const SevenNation = () => {
           </div>
         </div>
       </div>
-      <FooterMusic></FooterMusic>
     </div>
   );
 };
