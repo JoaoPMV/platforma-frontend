@@ -20,7 +20,7 @@ const Home = () => {
           <img src="./images/Clinton.jpg" className="images-home" alt="" />
           <img src="./images/Joao.jpg" className="images-home" alt="" />
         </div>
-        <div className="abesha2">
+        <div className="box-home2">
           <p className="title-home">English with native teachers</p>
           <p className="title-home">Online platform full of extra materials</p>
         </div>
