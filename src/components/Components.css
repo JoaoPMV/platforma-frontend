@@ -51,6 +51,8 @@
   background-image: linear-gradient(to right, rgb(31, 23, 138) 49%, rgb(0, 38, 100) 90%);
   border-bottom-left-radius: 0rem;
   border-bottom-right-radius: 3rem;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -75,6 +77,10 @@
 
 .container-options {
   background-color: rgb(233, 233, 236);
+  height: 13vh;
+
+
+
 
 }
 

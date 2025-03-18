@@ -1,7 +1,8 @@
 .container-platform {
   background-image: linear-gradient(to right, rgb(243, 240, 240), rgb(233, 233, 236));
+  height: 74vh;
+  overflow: hidden;
 
-  min-height: 74vh;
 
 }
 
