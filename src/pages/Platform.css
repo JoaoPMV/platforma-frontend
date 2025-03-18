@@ -1,7 +1,11 @@
 .container-platform {
   background-image: linear-gradient(to right, rgb(243, 240, 240), rgb(233, 233, 236));
-  height: 74dvh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
+
 
 
 }
@@ -210,8 +214,9 @@ input.valid {
 
 .platform {
   text-align: center;
-  padding-top: 10vh;
   font-size: 22px;
+
+
 }
 
 .userName {
