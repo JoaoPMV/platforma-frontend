@@ -79,7 +79,7 @@
   background-color: rgb(233, 233, 236);
   position: fixed;
   top: 0;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   height: 13dvh;
 }
 
@@ -106,6 +106,7 @@
   background-color: rgb(233, 233, 236);
   height: 13dvh;
   position: fixed;
+  margin-top: 1rem;
   bottom: 0;
 }
 
