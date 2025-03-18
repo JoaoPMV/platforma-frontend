@@ -23,5 +23,8 @@
 
 .container-music {
   background-color: rgb(233, 233, 236);
+  margin-top: 13dvh;
+  margin-bottom: 13dvh;
   min-height: 74dvh;
+  position: relative;
 }
