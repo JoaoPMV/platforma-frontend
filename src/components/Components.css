@@ -81,6 +81,7 @@
   top: 0;
   margin-bottom: 1rem;
   height: 13dvh;
+  z-index: 10
 }
 
 /* OPTIONS BOTTOM */

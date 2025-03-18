@@ -27,4 +27,5 @@
   margin-bottom: 13dvh;
   min-height: 74dvh;
   position: relative;
+  border: 2px solid yellow
 }
