@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <NavBar></NavBar>
       <div className="container-fluid container-home">
-        <div className="abesha">
+        <div className="box-home">
           <p className="title-home">Inglês com professores nativos</p>
           <p className="title-home">
             Plataforma online repleta de materiais extras

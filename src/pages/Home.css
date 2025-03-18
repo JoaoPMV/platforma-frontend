@@ -4,11 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-.container-home {
-
-  height: 100dvh;
-}
-
 
 .title-home {
   text-align: center;
@@ -18,10 +13,9 @@ body {
 
 
 
-.abesha {
+.box-home {
   padding: 5vh 0 5vh 0;
   margin: 0;
-
 }
 
 .abesha2 {
