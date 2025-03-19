@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Delete from "./pages/Delete.jsx";
 import Home from "./pages/Home";
 import QuemSomos from "./pages/QuemSomos.jsx";
 import Platform from "./pages/Platform";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/sobre" element={<QuemSomos />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/deletar" element={<Delete />} />
 
         {/* Rota para /platform, que agora é protegida */}
         <Route element={<PrivateRoute />}>

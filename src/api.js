@@ -75,3 +75,20 @@ export async function fetchPlatformData() {
     return null;
   }
 }
+
+export async function deleteUser(userData) {
+  try {
+    const response = await fetch(`${API_URL}/api/students/deletar`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData),
+      credentials: "include", // Adicionando o envio de credenciais
+    });
+    return await response.json();
+  } catch (error) {
+    console.error("Erro ao deletar usuário:", error);
+    return null;
+  }
+}

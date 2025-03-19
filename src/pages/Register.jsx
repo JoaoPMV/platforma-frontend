@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { registerUser } from "../api"; // Agora importando corretamente
+import "./Login.css";
 
 function Register() {
   const [name, setName] = useState("");
@@ -35,6 +36,7 @@ function Register() {
         <div>
           <label>Nome:</label>
           <input
+            className="input-register"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -44,6 +46,7 @@ function Register() {
         <div>
           <label>Email:</label>
           <input
+            className="input-register"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -53,6 +56,7 @@ function Register() {
         <div>
           <label>Senha:</label>
           <input
+            className="input-register"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
