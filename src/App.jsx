@@ -11,6 +11,7 @@ import EdSheeran from "./pages/Songs/edSheeran.jsx";
 import SevenNation from "./pages/Songs/SevenNation.jsx";
 import BrunoMars from "./pages/Songs/BrunoMars.jsx";
 import JohnLennon from "./pages/Songs/JohnLennon.jsx";
+import JohnLegend from "./pages/Songs/JohnLegend.jsx";
 import Video from "./pages/Videos/Pratical2.jsx";
 import Model from "./pages/Songs/Model.jsx";
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/platform/music/sevennation" element={<SevenNation />} />
           <Route path="/platform/music/brunomars" element={<BrunoMars />} />
           <Route path="/platform/music/johnlennon" element={<JohnLennon />} />
+          <Route path="/platform/music/johnlegend" element={<JohnLegend />} />
           <Route path="/platform/video" element={<Video />} />
         </Route>
       </Routes>

@@ -60,6 +60,16 @@ const Music = () => {
               />
             </NavLink>
           </div>
+          <div className="col-6 col-lg-3">
+            <p className="col text-center py-2 m-0">John Legend</p>
+            <NavLink to="/platform/music/johnlegend">
+              <img
+                src="/images/johnLegend.jpg"
+                className="images-music rounded-3 img-fluid"
+                alt=""
+              />
+            </NavLink>
+          </div>
         </div>
       </div>
       <OptionsBottom></OptionsBottom>
