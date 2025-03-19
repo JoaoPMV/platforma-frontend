@@ -18,7 +18,13 @@ import Model from "./pages/Songs/Model.jsx";
 
 import PrivateRoute from "./components/PrivateRoutes"; // Importe o PrivateRoute
 
+import React, { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    // Limpar localStorage quando a aplicação for carregada
+    localStorage.clear();
+  }, []); // O [] garante que isso rode apenas uma vez
   return (
     <BrowserRouter>
       <Routes>
