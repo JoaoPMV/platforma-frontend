@@ -16,7 +16,7 @@ import JohnLegend from "./pages/Songs/JohnLegend.jsx";
 import Video from "./pages/Videos/Pratical2.jsx";
 import Model from "./pages/Songs/Model.jsx";
 
-import PrivateRoute from "./components/PrivateRoutes"; // Importe o PrivateRoute
+import PrivateRoute from "./components/PrivateRoutes.jsx"; // Importe o PrivateRoute
 
 function App() {
   return (

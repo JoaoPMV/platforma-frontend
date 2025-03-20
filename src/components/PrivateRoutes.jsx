@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, Route } from "react-router-dom";
 
 const PrivateRoute = ({ element, ...rest }) => {
   const token = localStorage.getItem("token");
@@ -9,7 +9,8 @@ const PrivateRoute = ({ element, ...rest }) => {
     return <Navigate to="/login" />;
   }
 
-  return React.cloneElement(element, rest); // Renderiza o componente passado
+  // Aqui, o "element" será o componente a ser renderizado
+  return <Route {...rest} element={element} />;
 };
 
 export default PrivateRoute;
