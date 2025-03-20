@@ -14,7 +14,7 @@ const EdSheeran = () => {
     if (!token) {
       navigate("/login");
     }
-  }, []);
+  }, [navigate]);
   const audioRef = useRef(null);
   const [activeSection, setActiveSection] = useState(null);
 
