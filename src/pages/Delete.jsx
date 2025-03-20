@@ -19,8 +19,9 @@ const Delete = () => {
         // Deletando o token do localStorage quando o usuário for deletado
         localStorage.removeItem("token");
         alert("Usuário deletado com sucesso!");
-        // Redirecionar para a página de login
-        window.location.href = "/login"; // Para forçar a navegação para login
+        // Forçar a navegação para login e recarregar a página
+        window.location.href = "/login"; // Navegar para a página de login
+        window.location.reload(); // Recarregar a página para limpar o estado
       } else {
         alert("Erro ao deletar usuário");
       }
