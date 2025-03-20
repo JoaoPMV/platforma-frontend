@@ -16,7 +16,7 @@ const BonJovi = () => {
     if (!token) {
       navigate("/login");
     }
-  }, [navigate]); // Removido 'navigate' da dependência
+  }, []); // Dependência vazia para rodar apenas uma vez
 
   const audioRef = useRef(null);
   const [activeSection, setActiveSection] = useState(null);
