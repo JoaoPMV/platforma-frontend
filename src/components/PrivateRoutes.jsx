@@ -1,7 +1,7 @@
 import React from "react";
-import { Navigate, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
-const PrivateRoute = ({ element, ...rest }) => {
+const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem("token");
 
   // Se não houver token, redireciona para a página de login
@@ -9,8 +9,7 @@ const PrivateRoute = ({ element, ...rest }) => {
     return <Navigate to="/login" />;
   }
 
-  // Aqui, o "element" será o componente a ser renderizado
-  return <Route {...rest} element={element} />;
+  return children; // Retorna o componente que você quer renderizar
 };
 
 export default PrivateRoute;
