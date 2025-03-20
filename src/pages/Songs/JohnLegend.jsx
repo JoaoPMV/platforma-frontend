@@ -3,22 +3,18 @@ import { useState } from "react";
 import { useRef } from "react";
 import { FaCaretSquareLeft } from "react-icons/fa";
 import { FaCaretSquareRight } from "react-icons/fa";
-
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
 import "./Model.css";
 
 const JohnLegend = () => {
-
   const navigate = useNavigate();
-
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
       navigate("/login");
     }
-  });
+  }, []);
 
   const audioRef = useRef(null);
   const [activeSection, setActiveSection] = useState(null);

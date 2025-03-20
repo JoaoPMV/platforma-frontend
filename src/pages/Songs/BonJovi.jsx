@@ -5,18 +5,16 @@ import { FaCaretSquareLeft } from "react-icons/fa";
 import { FaCaretSquareRight } from "react-icons/fa";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
 import "./Model.css";
 
 const BonJovi = () => {
   const navigate = useNavigate();
-
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
       navigate("/login");
     }
-  }); // Dependência vazia para rodar apenas uma vez
+  }, []);
 
   const audioRef = useRef(null);
   const [activeSection, setActiveSection] = useState(null);
