@@ -14,7 +14,7 @@ const BrunoMars = () => {
     if (!token) {
       navigate("/login");
     }
-  }, []);
+  }, [navigate]);
 
   const audioRef = useRef(null);
   const [activeSection, setActiveSection] = useState(null);
