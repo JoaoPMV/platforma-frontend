@@ -63,6 +63,16 @@ export async function fetchPlatformData() {
       credentials: "include", // Adicionando o envio de credenciais
     });
 
+    if (response.status === 401 || response.status === 403) {
+      // Se o status for 401 ou 403, significa que o usuário não é mais válido (pode ter sido deletado)
+      console.error(
+        "Usuário não encontrado ou token inválido. Desconectando..."
+      );
+      localStorage.removeItem("token"); // Remove o token inválido
+      window.location.href = "/login"; // Redireciona para a página de login
+      return null;
+    }
+
     if (!response.ok) {
       const errorMessage = await response.text();
       console.error("Erro ao acessar a plataforma:", errorMessage);

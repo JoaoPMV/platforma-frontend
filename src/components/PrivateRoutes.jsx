@@ -1,16 +1,15 @@
-// src/components/PrivateRoute.jsx
-import { Navigate, Outlet } from "react-router-dom";
+import React from "react";
+import { Navigate } from "react-router-dom";
 
-const PrivateRoute = () => {
+const PrivateRoute = ({ element, ...rest }) => {
   const token = localStorage.getItem("token");
 
-  // Se o token não estiver presente, redireciona para a página de login
+  // Se não houver token, redireciona para a página de login
   if (!token) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/login" />;
   }
 
-  // Se o token estiver presente, renderiza as rotas internas
-  return <Outlet />;
+  return React.cloneElement(element, rest); // Renderiza o componente passado
 };
 
 export default PrivateRoute;
