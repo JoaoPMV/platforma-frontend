@@ -8,28 +8,28 @@ import "./Components.css";
 
 const Options = () => {
   return (
-    <div className="container-fluid container-options-bottom">
+    <div className="container-fluid">
       <div className="row row-options-bottom">
-        <div className="col col-music-bottom">
+        <div className="col col-lg-1 col-music-bottom">
           <NavLink to="">
             <RiSpeakFill className="icons-options" />
           </NavLink>
           <p className="options-word">speaking</p>
         </div>
-        <div className="col col-music-bottom">
+        <div className="col col-lg-1 col-music-bottom">
           <NavLink to="">
             <GrAssistListening className="icons-options" />
           </NavLink>
           <p className="options-word">listening</p>
         </div>
 
-        <div className="col col-music-bottom">
+        <div className="col col-lg-1  col-music-bottom">
           <NavLink to="">
             <BiNews className="icons-options" />
           </NavLink>
           <p className="options-word">news</p>
         </div>
-        <div className="col col-music-bottom">
+        <div className="col col-lg-1  col-music-bottom">
           <NavLink to="/">
             <FaHome className="icons-options" />
           </NavLink>

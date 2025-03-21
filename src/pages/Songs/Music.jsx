@@ -7,8 +7,8 @@ const Music = () => {
   return (
     <div>
       <OptionsTop></OptionsTop>
-      <div className="container-fluid container-music">
-        <div className="row pb-5 p-3">
+      <div className="container-fluid-music">
+        <div className="row container-music">
           <div className="col-6 col-lg-3">
             <p className="col text-center py-2 m-0">Bon Jovi</p>
             <NavLink to="/platform/music/bonjovi">

@@ -1,13 +1,9 @@
 .container-platform {
   background-image: linear-gradient(to right, rgb(243, 240, 240), rgb(233, 233, 236));
-  height: 100dvh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-
-
-
+  padding-top: 28dvh;
 }
 
 
@@ -215,8 +211,6 @@ input.valid {
 .platform {
   text-align: center;
   font-size: 22px;
-
-
 }
 
 .userName {
@@ -229,14 +223,12 @@ input.valid {
   font-size: 15px;
   margin: 0;
   padding: 3vh 7vw;
-  line-height: 200%;
-  text-align: justify;
+
 }
 
 .platform-description {
   font-size: 15px;
-  margin: 0;
-  padding: 0 7vw;
+  margin: 0 7dvw;
   line-height: 200%;
   text-align: justify;
 }
@@ -266,4 +258,39 @@ input.valid {
 .col-audio {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 769px) {
+
+
+  .container-platform {
+    background-image: linear-gradient(to right, rgb(243, 240, 240), rgb(233, 233, 236));
+    padding-top: 30dvh;
+
+  }
+
+  .userName-description {
+    font-size: 18px;
+    padding: 3dvh 0 3dvh 20dvw;
+  }
+
+  .platform {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .userName {
+    font-weight: bold;
+    font-size: 18;
+    font-size: 17px;
+  }
+
+  .platform-description {
+    font-size: 18px;
+    margin: 0;
+    padding-left: 20dvw;
+    line-height: 200%;
+
+  }
+
 }
